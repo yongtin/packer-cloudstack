@@ -15,6 +15,6 @@ testrace:
 	go test -race $(TEST) $(TESTARGS)
 
 updatedeps:
-	go get -u -v ./...
+	go get -u github.com/tools/godep && export PATH=${PATH}:${GOPATH}/bin && godep restore
 
 .PHONY: bin default test updatedeps

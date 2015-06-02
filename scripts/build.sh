@@ -27,7 +27,10 @@ XC_OS=${XC_OS:-linux darwin windows freebsd openbsd}
 
 # Install dependencies
 echo "==> Getting dependencies..."
-go get ./...
+go get -u github.com/tools/godep 
+go get -u github.com/mitchellh/gox
+export PATH=${PATH}:${GOPATH}/bin 
+godep restore
 
 # Delete the old dir
 echo "==> Removing old directory..."

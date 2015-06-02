@@ -1,0 +1,60 @@
+{
+    "Deps": [
+        {
+            "Comment": "null-236",
+            "ImportPath": "code.google.com/p/go.crypto/ssh",
+            "Rev": "69e2a90ed92d03812364aeb947b7068dc42e561e"
+        },
+        {
+            "ImportPath": "github.com/hashicorp/go-version",
+            "Rev": "999359b6b7a041ce16e695d51e92145b83f01087"
+        },
+        {
+            "Comment": "1.0.0-10-g5a54467",
+            "ImportPath": "github.com/mindjiver/gopherstack",
+            "Rev": "5a54467269db7c5a57bba66379c605c05ab0e7c5"
+        },
+        {
+            "ImportPath": "github.com/mitchellh/go-fs",
+            "Rev": "faaa223588dd7005e49bf66fa2d19e35c8c4d761"
+        },
+        {
+            "ImportPath": "github.com/mitchellh/iochan",
+            "Rev": "87b45ffd0e9581375c491fef3d32130bb15c5bd7"
+        },
+        {
+            "ImportPath": "github.com/mitchellh/mapstructure",
+            "Rev": "bb4fbaf540ca2f7057d3adb5765784d24d9fd801"
+        },
+        {
+            "ImportPath": "github.com/mitchellh/multistep",
+            "Rev": "162146fc57112954184d90266f4733e900ed05a5"
+        },
+        {
+            "ImportPath": "github.com/mitchellh/packer/common",
+            "Rev": "9cd66feeacbd9cb318b72eb5ed59428c5b8c37ac"
+        },
+        {
+            "ImportPath": "github.com/mitchellh/packer/communicator/ssh",
+            "Rev": "9cd66feeacbd9cb318b72eb5ed59428c5b8c37ac"
+        },
+        {
+            "ImportPath": "github.com/mitchellh/packer/packer",
+            "Rev": "9cd66feeacbd9cb318b72eb5ed59428c5b8c37ac"
+        },
+        {
+            "ImportPath": "github.com/hashicorp/go-msgpack/codec",
+            "Rev": "fa3f63826f7c23912c15263591e65d54d080b458"
+        },
+        {
+            "ImportPath": "github.com/hashicorp/yamux",
+            "Rev": "b2e55852ddaf823a85c67f798080eb7d08acd71d"
+        },
+        {
+            "ImportPath": "github.com/tools/godep",
+            "Rev": "e28aafa1c4a9ab9108ae98211f12bbcc43e24510"
+        }
+    ],
+    "GoVersion": "go1.4.1",
+    "ImportPath": "github.com/yongtin/packer-cloudstack"
+}

@@ -51,11 +51,18 @@ func (s *stepCreateTemplate) Run(state multistep.StateBag) multistep.StepAction 
 	}
 
 	// always use the first volume when creating a template
-	volumeId := response.Listvolumesresponse.Volume[0].ID
+	volumeObjects := response.Listvolumesresponse
+	var rootVolumeId string
+	for _,v := range volumeObjects.Volume {
+		if v.Type == "ROOT" {
+			rootVolumeId = v.ID
+		}
+	}
+
 	createOpts := &gopherstack.CreateTemplate{
 		Name:                  c.TemplateName,
 		Displaytext:           c.TemplateDisplayText,
-		Volumeid:              volumeId,
+		Volumeid:              rootVolumeId,
 		Ostypeid:              osId,
 		Isdynamicallyscalable: c.TemplateScalable,
 		Ispublic:              c.TemplatePublic,
